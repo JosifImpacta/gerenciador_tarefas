@@ -1,4 +1,4 @@
-const localStorageKey = 'to-do-list-gn'
+const localStorageKey = 'gerenciador_de_tarefas'
 
 function validateIfExistsNewTask()
 {
