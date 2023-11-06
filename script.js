@@ -6,7 +6,14 @@ function validateIfExistsNewTask()
     let inputValue = document.getElementById('input-new-task').value
     let exists     = values.find(x => x.name == inputValue)
     return !exists ? false : true
+
 }
+
+document.getElementById('input-new-task').addEventListener('keyup', function(event) {
+  if (event.key === "Enter") {
+      newTask();
+  }
+});
 
 function newTask()
 {
